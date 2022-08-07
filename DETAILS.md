@@ -10,16 +10,22 @@
 
 > To get this project running perfectly on your local, ensure you follow the instructions below.
 1. `npm install`
+
 2. Run this command `npm run dev`
+
 3. The project should be live at http://localhost:3004 .
 
 ## How It works
 This is a simple age calculator, it takes the dob(unix timestamp) then calculates the age based off that.
 
 ### Main Library and Frameworks
+
 - ExpressJS as the web framework because of how minimal and flexible it is.
+
 - Morgan for logging
+
 - Express Rate Limit for rate limiting
+
 - Joi for validating the schema
 
 There is only a single GET route which is /howold, this route is handled by the a controller (dob.controller.js) which abstracts the logic away from the router.
