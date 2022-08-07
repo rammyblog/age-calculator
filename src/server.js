@@ -6,7 +6,7 @@ const ageRoute = require('./router.js');
 const app = express();
 
 app.use(morgan('combined'));
-// app.use(rateLimiter);
+app.use(rateLimiter);
 
 const PORT = process.env.PORT || 3004;
 
